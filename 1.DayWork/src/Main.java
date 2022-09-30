@@ -12,7 +12,7 @@ public class Main {
 		System.out.println(mesaj + ogrenciSayisi);
 
 		// if 
-		int sayi = 19; 
+		int sayi = 19;
 		if (sayi < 24) {
 		System.out.println("Sayı 20'den küçüktür.");
 		}
