@@ -221,6 +221,30 @@ public class Main {
 	}
 	else 
 		System.out.println("Sayı mükemmel değildir");
+	
+	//Arkadaş Sayılar 220-284
+	int numb1 = 220;
+	int numb2 = 284;
+	int toplam1 = 0;
+	int toplam2 = 0;
+	
+	for(int t=1; t<numb1; t++) {
+		if(numb1 % t == 0) {
+			toplam1 += t;
+		}
+	}
+		
+	for(int w=1; w<numb2; w++) {
+		if(numb2 % w == 0) {
+			toplam2 += w;
+		}
+	}
+	
+	if(numb1 == toplam2 && numb2 == toplam1) {
+		System.out.println("Bu iki sayı arkadaştır");
+	}else {
+		System.out.println("Bu iki sayı arkadaş değildir");
+	}
+	
 	}
 }
-
