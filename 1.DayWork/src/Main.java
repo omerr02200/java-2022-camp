@@ -102,8 +102,8 @@ public class Main {
 	// ReCap Demo2 
 	double[] myList = { 1.2, 6.7, 4.3, 5.6 }; 
 	double total = 0;
-	double max = myList[0];for(
-	double number:myList){
+	double max = myList[0];
+	for(double number:myList){
 		if (max < number) {
 			max = number;
 		}
