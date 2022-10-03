@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+C:\java-2022 camp\2.DayWork\.metadata\.plugins\org.eclipse.jdt.core
-2895242668.index
-1670916203.index
-1865797976.index
