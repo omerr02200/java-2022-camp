@@ -1,0 +1,21 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static void Add() {
+		System.out.println("Eklendi.");
+	}
+	
+	public static void Add() {
+		System.out.println("Silindi.");
+	}
+	
+	public static void Update() {
+		System.out.println("Güncellendi.");
+	}
+
+}

@@ -1,0 +1,31 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		String mesaj = "Bugün hava çok güzel.";
+		String yeniMesaj = mesaj.substring(0,2);
+		System.out.println(yeniMesaj);
+
+	}
+	
+	public static void Add() {
+		System.out.println("Eklendi.");
+	}
+	
+	public static void Add() {
+		System.out.println("Silindi.");
+	}
+	
+	public static void Update() {
+		System.out.println("Güncellendi.");
+	}
+	
+	public static int topla() {
+		return 5;
+	}
+	
+	public static String sehirVer() {
+		return "Ankara";
+	}
+
+}
