@@ -1,0 +1,8 @@
+package overriding;
+
+public class Main {
+	public void main(String[] args) {
+		OgretmenKrediManager ogretmenKrediManager = new OgretmenKrediManager();
+		ogretmenKrediManager.hesapla(123);
+	}
+}

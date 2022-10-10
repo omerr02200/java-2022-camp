@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="classesWithAttributes.ProductManager"/>
+    <fullyQualifiedTypeName name="classesWithAttributes.Product"/>
+    <fullyQualifiedTypeName name="methodOverloading.DortIslem"/>
+    <fullyQualifiedTypeName name="inheritance.Customer"/>
+    <fullyQualifiedTypeName name="inheritance.Employee"/>
+    <fullyQualifiedTypeName name="inheritance.PersonManager"/>
+    <fullyQualifiedTypeName name="inheritance.CustomerManager"/>
+    <fullyQualifiedTypeName name="inheritance.EmployeeManager"/>
+    <fullyQualifiedTypeName name="inheritanceDemo.TarimKrediManager"/>
+    <fullyQualifiedTypeName name="inheritanceDemo.OgretmenKrediManager"/>
+    <fullyQualifiedTypeName name="inheritanceDemo.KrediUI"/>
+    <fullyQualifiedTypeName name="inheritanceDemo.BaseKrediManager"/>
+    <fullyQualifiedTypeName name="inheritanceDemo.AskerKrediManager"/>
+    <fullyQualifiedTypeName name="polymorphismDemo.Main"/>
+    <fullyQualifiedTypeName name="polymorphismDemo.FileLogger"/>
+    <fullyQualifiedTypeName name="polymorphismDemo.EmailLogger"/>
+    <fullyQualifiedTypeName name="polymorphismDemo.ConsoleLogger"/>
+    <fullyQualifiedTypeName name="polymorphismDemo.BaseLogger"/>
+    <fullyQualifiedTypeName name="polymorphismDemo.CustomerManager"/>
+    <fullyQualifiedTypeName name="polymorphismDemo.DatabaseLogger"/>
+    <fullyQualifiedTypeName name="overriding.OgretmenKrediManager"/>
+    <fullyQualifiedTypeName name="overriding.TaeımKrediManager"/>
+    <fullyQualifiedTypeName name="overriding.BaseKrediManager"/>
+    <fullyQualifiedTypeName name="overriding.OgrenciKrediManager"/>
+    <fullyQualifiedTypeName name="abstractClasses.ManGameCalculator"/>
+    <fullyQualifiedTypeName name="abstractClasses.GameCalculator"/>
+    <fullyQualifiedTypeName name="abstractClasses.KidsGameCalculator"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="abstractDemo.BaseDatabaseManager"/>
+    <fullyQualifiedTypeName name="abstractDemo.CustomerManager"/>
+    <fullyQualifiedTypeName name="abstractDemo.OracleDatabaseManager"/>
+    <fullyQualifiedTypeName name="interfaces.ICustomerDal"/>
+    <fullyQualifiedTypeName name="interfaces.CustomerManager"/>
+    <fullyQualifiedTypeName name="interfaces.MySqlCustomerDal"/>
+    <fullyQualifiedTypeName name="interfaceDemo.IEatable"/>
+    <fullyQualifiedTypeName name="interfaceDemo.IPayable"/>
+    <fullyQualifiedTypeName name="interfaceDemo.IWorkable"/>
+    <fullyQualifiedTypeName name="java.lang.Process"/>
+    <fullyQualifiedTypeName name="staticDemo.ProductValidator"/>
+    <fullyQualifiedTypeName name="staticDemo.ProductManager"/>
+    <fullyQualifiedTypeName name="staticDemo.Product"/>
+    <fullyQualifiedTypeName name="staticDemo.DatabaseHelper"/>
+    <fullyQualifiedTypeName name="staticDemo.DatabaseHelper.Crud"/>
+</qualifiedTypeNameHistroy>
