@@ -1,0 +1,22 @@
+package kodlama.ioDemo;
+
+import java.util.Locale.Category;
+
+import kodlama.ioDemo.business.InstructorManager;
+import kodlama.ioDemo.dataAccess.HibernateInstructorDao;
+import kodlama.ioDemo.dataAccess.JdbcInstructorDao;
+import kodlama.ioDemo.entities.Instructor;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Instructor instructor = new Instructor(1, "Engin", "Demiroğ");
+		InstructorManager instructorManager = new InstructorManager(new HibernateInstructorDao());
+		instructorManager.add(instructor);
+		
+		Category category  = new kodlama.ioDemo.entities.Category()
+		InstructorManager instructorManager = new InstructorManager(new HibernateInstructorDao());
+		instructorManager.add(instructor);
+	}
+
+}

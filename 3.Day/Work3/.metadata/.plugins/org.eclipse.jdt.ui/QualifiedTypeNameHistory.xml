@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="kodlama.ioDemo.entities.BaseEntity"/>
+    <fullyQualifiedTypeName name="kodlama.ioDemo.business.InstructorManager"/>
+    <fullyQualifiedTypeName name="kodlama.ioDemo.dataAccess.InstructorDao"/>
+    <fullyQualifiedTypeName name="kodlama.ioDemo.dataAccess.JdbcInstructorDao"/>
+    <fullyQualifiedTypeName name="kodlama.ioDemo.dataAccess.HibernateInstructorDao"/>
+    <fullyQualifiedTypeName name="kodlama.ioDemo.entities.Instructor"/>
+    <fullyQualifiedTypeName name="java.util.Locale.Category"/>
+    <fullyQualifiedTypeName name="kodlama.ioDemo.entities.Category"/>
+    <fullyQualifiedTypeName name="kodlama.ioDemo.business.CategoryManager"/>
+    <fullyQualifiedTypeName name="kodlama.ioDemo.dataAccess.CategoryDao"/>
+    <fullyQualifiedTypeName name="kodlama.ioDemo.dataAccess.ProgrammingLanguageDao"/>
+    <fullyQualifiedTypeName name="kodlama.ioDemo.business.ProgrammingLanguageManager"/>
+    <fullyQualifiedTypeName name="kodlama.ioDemo.dataAccess.JdbcProgrammingLanguageDao"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="kodlama.ioDemo.entities.ProgrammingLanguage"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="kodlama.ioDemo.core.logging.DatabaseLogger"/>
+    <fullyQualifiedTypeName name="kodlama.ioDemo.core.logging.FileLogger"/>
+    <fullyQualifiedTypeName name="kodlama.ioDemo.core.logging.Logger"/>
+</qualifiedTypeNameHistroy>

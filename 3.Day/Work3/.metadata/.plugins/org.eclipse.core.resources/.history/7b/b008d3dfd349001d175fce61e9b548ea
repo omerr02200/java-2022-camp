@@ -1,0 +1,26 @@
+package kodlama.ioDemo;
+
+import kodlama.ioDemo.business.CategoryManager;
+import kodlama.ioDemo.business.InstructorManager;
+import kodlama.ioDemo.business.ProgrammingLanguageManager;
+import kodlama.ioDemo.entities.Instructor;
+import kodlama.ioDemo.entities.*;
+import kodlama.ioDemo.dataAccess.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Instructor instructor = new Instructor(1, "Engin", "Demiroğ");
+		InstructorManager instructorManager = new InstructorManager(new HibernateInstructorDao());
+		instructorManager.add(instructor);
+		
+		Category category = new Category(1, "Programlama");
+		CategoryManager categoryManager = new CategoryManager(new JdbcCategoryDao());
+		categoryManager.add(category);
+		
+		ProgrammingLanguage programmingLanguage = new ProgrammingLanguage(1, "Java", 1, 1500);
+		ProgrammingLanguageManager programmingLanguageManager = new ProgrammingLanguageManager(new JdbcProgrammingLanguageDao());
+		programmingLanguageManager.add(programmingLanguage);
+	}
+
+}

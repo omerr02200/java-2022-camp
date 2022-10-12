@@ -1,0 +1,12 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="kodlama.ioDemo.dataAccess.JdbcInstructorDao"><rhs name\="kodlama.ioDemo.dataAccess.JdbcInstructorDao"/></lhs><lhs name\="kodlama.ioDemo.business.InstructorManager"><rhs name\="kodlama.ioDemo.business.InstructorManager"/></lhs><lhs name\="kodlama.ioDemo.entities.BaseEntity"><rhs name\="kodlama.ioDemo.entities.Instructor"/><rhs name\="kodlama.ioDemo.entities.Category"/><rhs name\="kodlama.ioDemo.entities.ProgrammingLanguage"/></lhs><lhs name\="kodlama.ioDemo.entities.Instructor"><rhs name\="kodlama.ioDemo.entities.Instructor"/></lhs><lhs name\="kodlama.ioDemo.dataAccess.InstructorDao"><rhs name\="kodlama.ioDemo.dataAccess.JdbcInstructorDao"/><rhs name\="kodlama.ioDemo.dataAccess.HibernateInstructorDao"/></lhs><lhs name\="kodlama.ioDemo.entities.Category"><rhs name\="kodlama.ioDemo.entities.Category"/></lhs><lhs name\="kodlama.ioDemo.entities.ProgrammingLanguage"><rhs name\="kodlama.ioDemo.entities.ProgrammingLanguage"/></lhs><lhs name\="kodlama.ioDemo.business.ProgrammingLanguageManager"><rhs name\="kodlama.ioDemo.business.ProgrammingLanguageManager"/></lhs><lhs name\="kodlama.ioDemo.dataAccess.ProgrammingLanguageDao"><rhs name\="kodlama.ioDemo.dataAccess.JdbcProgrammingLanguageDao"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="kodlama.ioDemo.core.logging.Logger"><rhs name\="kodlama.ioDemo.core.logging.DatabaseLogger"/><rhs name\="kodlama.ioDemo.core.logging.FileLogger"/></lhs></history>
+content_assist_number_of_computers=17
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=22
+spelling_locale_initialized=true
+typefilter_migrated_2=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

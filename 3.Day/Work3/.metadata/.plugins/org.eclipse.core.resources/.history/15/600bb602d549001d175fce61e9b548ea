@@ -1,0 +1,5 @@
+package kodlama.ioDemo.core.logging;
+
+public class DatabaseLogger {
+
+}

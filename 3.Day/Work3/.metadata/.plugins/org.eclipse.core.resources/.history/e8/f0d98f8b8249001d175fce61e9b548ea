@@ -1,0 +1,35 @@
+package kodlama.ioDemo.business;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import kodlama.ioDemo.dataAccess.ProgrammingLanguageDao;
+import kodlama.ioDemo.entities.ProgrammingLanguage;
+
+public class ProgrammingLanguageManager {
+	
+	ProgrammingLanguageDao programmingLanguageDao;
+	
+	ProgrammingLanguage[] programmingLanguages = new ProgrammingLanguage[5];
+	
+	public ProgrammingLanguageManager(ProgrammingLanguageDao programmingLanguageDao) {
+		this.programmingLanguageDao = programmingLanguageDao;
+	}
+	
+	public void add(ProgrammingLanguage programmingLanguage) {
+		boolean result = nameExist(programmingLanguage.getName());
+		if(result) {
+			programmingLanguageDao.add(programmingLanguage);
+		}
+		System.out.println("Aynı isimde kurs zaten var.");
+	}
+	
+	public boolean nameExist(String name) {
+		for(ProgrammingLanguage language : programmingLanguages) {
+			if(language.getName().equals(name)) {
+				return false;
+			}
+		}
+		return true;
+	}
+}

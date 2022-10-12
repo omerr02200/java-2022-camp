@@ -1,0 +1,5 @@
+package kodlama.ioDemo.entities;
+
+public class Instructor {
+
+}

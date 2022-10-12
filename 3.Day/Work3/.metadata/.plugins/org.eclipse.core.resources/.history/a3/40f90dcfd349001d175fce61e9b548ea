@@ -1,0 +1,19 @@
+package kodlama.ioDemo.business;
+
+import kodlama.ioDemo.dataAccess.CategoryDao;
+import kodlama.ioDemo.dataAccess.InstructorDao;
+import kodlama.ioDemo.dataAccess.JdbcInstructorDao;
+import kodlama.ioDemo.entities.Category;
+import kodlama.ioDemo.entities.Instructor;
+
+public class CategoryManager {
+	
+	CategoryDao categoryDao;
+	
+	public CategoryManager(CategoryDao categoryDao) {
+		this.categoryDao=categoryDao;
+	}
+	public void add(Category category) {
+		categoryDao.add(category);
+	}
+}
