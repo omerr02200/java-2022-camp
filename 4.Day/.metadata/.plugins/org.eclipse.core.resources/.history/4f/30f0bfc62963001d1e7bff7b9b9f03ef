@@ -1,0 +1,65 @@
+package kodlama.io.devs.business.concretes;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import kodlama.io.devs.business.abstracts.ProgrammingLanguageService;
+import kodlama.io.devs.business.requests.CreateLanguageRequest;
+import kodlama.io.devs.business.responses.GetAllLanguageResponse;
+import kodlama.io.devs.dataAccess.abstracts.ProgrammingLanguageRepository;
+import kodlama.io.devs.entities.ProgrammingLanguage;
+
+@Service
+public class ProgrammingLanguageManager implements ProgrammingLanguageService{
+
+	ProgrammingLanguageRepository languageRepository;
+	
+	@Autowired
+	public ProgrammingLanguageManager(ProgrammingLanguageRepository languageRepository) {
+		this.languageRepository = languageRepository;
+	}
+
+	@Override
+	public List<GetAllLanguageResponse> getAll() {
+		List<ProgrammingLanguage> languages = languageRepository.findAll();
+		List<GetAllLanguageResponse> languageResponses = new ArrayList<>();
+		
+		for(ProgrammingLanguage language : languages) {
+			GetAllLanguageResponse responseItem = new GetAllLanguageResponse();
+			responseItem.setId(language.getId());
+			responseItem.setName(language.getName());
+			
+			languageResponses.add(responseItem);
+		}
+		return languageResponses;
+	}
+
+	@Override
+	public void add(CreateLanguageRequest language) throws Exception {
+		ProgrammingLanguage programmingLanguage = new ProgrammingLanguage();
+		
+		if(language.getName().isEmpty()) {
+			throw new Exception("Kurs ismi boş geçilemez.");
+		}
+		for (GetAllLanguageResponse language2 : getAll()) {
+			if(language2.getName().equals(language.getName())) {
+				throw new Exception("Aynı isimde kurs zaten var.");
+			}
+			programmingLanguage.setName(language.getName());
+		}
+		languageRepository.save(programmingLanguage);
+	}
+
+	@Override
+	public GetAllLanguageResponse getByid(int id) {
+		Optional<ProgrammingLanguage> language = languageRepository.findById(id);
+		GetAllLanguageResponse responseItem = new GetAllLanguageResponse();
+		responseItem.setId(language.get().getId());
+		responseItem.setName(language.get().getName());
+		return responseItem;
+	}
+}

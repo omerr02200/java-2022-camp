@@ -1,0 +1,5 @@
+package kodlama.io.devs.business.responses.technology;
+
+public class GetAllResponseTechnology {
+
+}

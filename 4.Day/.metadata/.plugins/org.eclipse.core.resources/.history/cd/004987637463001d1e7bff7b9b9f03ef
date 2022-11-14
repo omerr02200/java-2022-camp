@@ -1,0 +1,9 @@
+package kodlama.io.devs.business.abstracts;
+
+import kodlama.io.devs.business.requests.technology.CreateTechnologyRequest;
+import kodlama.io.devs.business.requests.technology.UpdateTechnologyRequest;
+
+public interface TechnologyService {
+	void add(CreateTechnologyRequest createTechnologyRequest);
+	void update(UpdateTechnologyRequest updateTechnologyRequest);
+}

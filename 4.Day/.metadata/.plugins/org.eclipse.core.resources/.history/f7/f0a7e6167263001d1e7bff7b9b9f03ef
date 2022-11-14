@@ -1,0 +1,25 @@
+package kodlama.io.devs.webapi.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import kodlama.io.devs.business.abstracts.TechnologyService;
+import kodlama.io.devs.business.requests.technology.CreateTechnologyRequest;
+
+@RestController
+@RequestMapping("/api/technologies")
+public class TechnologiesController {
+	TechnologyService technologyService;
+	
+	@Autowired
+	public TechnologiesController(TechnologyService technologyService) {
+		this.technologyService = technologyService;
+	}
+	
+	@PostMapping("/add")
+	public void add(CreateTechnologyRequest createTechnologyRequest) {
+		technologyService.add(createTechnologyRequest);
+	}
+}

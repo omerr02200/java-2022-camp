@@ -1,0 +1,5 @@
+package kodlama.io.devs.webapi.controllers;
+
+public class TechnologiesController {
+
+}

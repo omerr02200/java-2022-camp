@@ -1,11 +1,17 @@
 package kodlama.io.devs.business.concretes;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import kodlama.io.devs.business.abstracts.ProgrammingLanguageService;
+import kodlama.io.devs.business.requests.language.CreateLanguageRequest;
+import kodlama.io.devs.business.requests.language.DeleteLanguageRequest;
+import kodlama.io.devs.business.requests.language.UpdateLanguageRequest;
+import kodlama.io.devs.business.responses.language.GetAllLanguageResponse;
 import kodlama.io.devs.dataAccess.abstracts.ProgrammingLanguageRepository;
 import kodlama.io.devs.entities.ProgrammingLanguage;
 
@@ -20,39 +26,58 @@ public class ProgrammingLanguageManager implements ProgrammingLanguageService{
 	}
 
 	@Override
-	public List<ProgrammingLanguage> getAll() {
-		return languageRepository.getAll();
+	public List<GetAllLanguageResponse> getAll() {
+		List<ProgrammingLanguage> languages = languageRepository.findAll();
+		List<GetAllLanguageResponse> languageResponses = new ArrayList<>();
+		
+		for(ProgrammingLanguage language : languages) {
+			GetAllLanguageResponse responseItem = new GetAllLanguageResponse();
+			responseItem.setId(language.getId());
+			responseItem.setName(language.getName());
+			
+			languageResponses.add(responseItem);
+		}
+		return languageResponses;
 	}
 
 	@Override
-	public void add(ProgrammingLanguage language) throws Exception {
+	public void add(CreateLanguageRequest language) throws Exception {
+		ProgrammingLanguage programmingLanguage = new ProgrammingLanguage();
+		
 		if(language.getName().isEmpty()) {
 			throw new Exception("Kurs ismi boş geçilemez.");
 		}
-		for (ProgrammingLanguage language2 : getAll()) {
-			if(language2.getId() == language.getId()) {
-				throw new Exception("Aynı id zaten var.");
-			}
+		for (GetAllLanguageResponse language2 : getAll()) {
 			if(language2.getName().equals(language.getName())) {
 				throw new Exception("Aynı isimde kurs zaten var.");
 			}
+			programmingLanguage.setName(language.getName());
 		}
-		languageRepository.add(language);
+		languageRepository.save(programmingLanguage);
 	}
 
 	@Override
-	public void update(ProgrammingLanguage language) {
-		languageRepository.update(language);
+	public GetAllLanguageResponse getByid(int id) {
+		Optional<ProgrammingLanguage> language = languageRepository.findById(id);
+		GetAllLanguageResponse responseItem = new GetAllLanguageResponse();
+		responseItem.setId(language.get().getId());
+		responseItem.setName(language.get().getName());
+		return responseItem;
 	}
 
 	@Override
-	public void delete(ProgrammingLanguage language) {
-		languageRepository.delete(language);
+	public void update(UpdateLanguageRequest language) throws Exception {
+		@SuppressWarnings("deprecation")
+	  	ProgrammingLanguage updatedLanguage = languageRepository.getById(language.getId());
+	  	updatedLanguage.setName(language.getName());
+	  	languageRepository.save(updatedLanguage);
 	}
 
+	
 	@Override
-	public ProgrammingLanguage getByid(int id) {
-		return languageRepository.getByid(id);
+	public void delete(DeleteLanguageRequest language) {
+		@SuppressWarnings("deprecation")
+		ProgrammingLanguage deletedLanguage = languageRepository.getById(language.getId());
+		languageRepository.delete(deletedLanguage);
 	}
-
 }
